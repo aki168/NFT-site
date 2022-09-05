@@ -23,19 +23,23 @@
 
   /*自組元件*/
   .my-container {
-    @apply xl: container xl:mx-auto p-4;
+    @apply xl:container xl:mx-auto p-4;
   }
+
+  .my-button {
+    @apply py-1 px-11 text-lg ring-1 ring-transparent relative
+    hover:text-white hover:bg-primary ring-black;
+  }
+  
 
   .my-title {
     @apply text-wine-600 font-bold text-center text-[24px] md: text-[48px] lg:text-5xl
-  }
-
-  .roboto {
-    font-family: 'Roboto', sans-serif;
-  }
+  } 
 
 }
 
 @layer utilities {
   /*自組樣式*/
 }
+
+

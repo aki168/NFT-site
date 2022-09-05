@@ -24,37 +24,43 @@ const rank = [
         rank:"1",
         maker:"Zoe Jiang",
         title:"散步遇到的女人",
-        img:"art04.jpg"
+        img:"art04.jpg",
+        price:"300"
     },
     {
         rank:"2",
         maker:"Yui",
         title:"爆炸頭的母親",
-        img:"art05.jpg"
+        img:"art05.jpg",
+        price:"300"
     },
     {
         rank:"3",
         maker:"Bug Lin",
         title:"夏天的時候",
-        img:"art06.jpg"
+        img:"art06.jpg",
+        price:"300"
     },
     {
         rank:"4",
         maker:"Michael",
         title:"追求者送我的花",
-        img:"art07.jpg"
+        img:"art07.jpg",
+        price:"300"
     },
     {
         rank:"5",
         maker:"Wei JJ",
         title:"今天釣到的魚",
-        img:"art07.jpg"
+        img:"art07.jpg",
+        price:"300"
     },    
     {
         rank:"6",
         maker:"Even Lai",
         title:"人生中的貓咪們",
-        img:"art08.jpg"
+        img:"art08.jpg",
+        price:"300"
     }
 ]
 
@@ -125,4 +131,4 @@ const artists = [
     }
 ] 
 
-export default { recommend, rank, newWorks, artists };
+export { recommend, rank, newWorks, artists };
