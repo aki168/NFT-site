@@ -1,0 +1,9 @@
+.VerticalTitle{
+    writing-mode: vertical-lr;
+    background: #000;
+    color: #fff;
+    padding: 24px;
+    display: flex;
+    gap:16px;
+    align-items: center;
+}
