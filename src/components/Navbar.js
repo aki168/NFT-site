@@ -40,7 +40,7 @@ const Navbar = () => {
           <a href='/' className=' border-black font-bold py-10 pl-12 pr-20  hover:bg-silver-600 hover:text-white'>
             <FontAwesomeIcon
               icon={faWallet}
-              size={24}
+              fontSize={24}
             />
           </a>
         </div>

@@ -45,7 +45,7 @@ const rank = [
         rank:"4",
         maker:"Michael",
         title:"追求者送我的花",
-        img:"art07.jpg",
+        img:"art13.jpg",
         price:"300"
     },
     {
@@ -118,15 +118,18 @@ const newWorks = [
 
 const artists = [
     {
+        img:"artist01.jpg",
+        name:"Van. CS",
+        info:"​喜愛分享，工程師界的藝術家當之無愧。"
+    },
+    {
+        img:"artist02.jpg",
         name:"Antony Wu",
         info:"​喜愛大自然，創作題材常見大山、大水、花草與樹木。"
     },
     {
+        img:"artist03.jpg",
         name:"Lucy",
-        info:"​喜愛分享，工程師界的藝術家當之無愧。"
-    },
-    {
-        name:"Van. CS",
         info:"​熱心負責，擁有獨具一格的人人稱羨的設計腦。"
     }
 ] 

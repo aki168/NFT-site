@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Paytone+One&family=Squada+One&display=swap');
 
 @layer base {
   body {
@@ -28,9 +28,15 @@
 
   .my-button {
     @apply py-1 px-11 text-lg ring-1 ring-transparent relative
+    bg-white
     hover:text-white hover:bg-primary ring-black;
   }
-  
+
+  .my-button-nb {
+    @apply py-1 px-11 text-lg ring-1 ring-transparent relative
+    hover:text-white hover:bg-primary;
+  }
+
 
   .my-title {
     @apply text-wine-600 font-bold text-center text-[24px] md: text-[48px] lg:text-5xl
@@ -40,6 +46,10 @@
 
 @layer utilities {
   /*自組樣式*/
+
+  .fs-num{
+    font-family: 'Paytone One' , serif;
+  }
 }
 
 
