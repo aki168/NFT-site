@@ -3,6 +3,11 @@ import { artists } from '../data/worksData'
 import MyButton from './MyButton'
 
 const MySlider = () => {
+
+  const aTagHandler = (e) => {
+    e.preventDefault()
+  }
+
   return (
     <>
       <div className='flex justify-between items-center'>
@@ -53,10 +58,10 @@ const MySlider = () => {
       </div>
 
       <div className='p-12 flex gap-2 justify-center'>
-        <a href="!#" className='w-[8px] h-[8px] bg-black'></a>
-        <a href="!#" className='w-[16px] h-[8px] bg-primary'></a>
-        <a href="!#" className='w-[8px] h-[8px] bg-black'></a>
-        <a href="!#" className='w-[8px] h-[8px] bg-black'></a>
+        <a href="!#" onClick={aTagHandler} className='w-[8px] h-[8px] bg-black hover:bg-silver-500'></a>
+        <a href="!#" onClick={aTagHandler} className='w-[16px] h-[8px] bg-primary hover:bg-silver-500'></a>
+        <a href="!#" onClick={aTagHandler} className='w-[8px] h-[8px] bg-black hover:bg-silver-500'></a>
+        <a href="!#" onClick={aTagHandler} className='w-[8px] h-[8px] bg-black hover:bg-silver-500'></a>
       </div>
 
     </>

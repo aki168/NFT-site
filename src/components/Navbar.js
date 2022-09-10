@@ -10,13 +10,16 @@ const Navbar = () => {
     setSearch(prev => !prev)
   }
 
-
+  
+  const aTagHandler = (e) => {
+    e.preventDefault()
+  }
 
   return (
     <nav className='py-4 px-3 md:px-0 md:py-0 bg-silver-300'>
       {/* PC版本 */}
       <div className='hidden md:flex md:items-center md:justify-between border border-black'>
-        <a href="/" className='pl-20 py-8 border-black'>
+        <a href="/" onClick={aTagHandler} className='pl-20 py-8 border-black'>
           <img src="images/logo.svg" alt="logo" />
         </a>
         <div className='flex items-center'>
@@ -31,13 +34,13 @@ const Navbar = () => {
             fontSize={24}
             fontWeight={700}
           />
-          <a href='/' className='border-r border-black font-bold py-10 px-12 hover:bg-silver-600 hover:text-white'>
+          <a href='/' onClick={aTagHandler} className='border-r border-black font-bold py-10 px-12 hover:bg-silver-600 hover:text-white'>
             探索
           </a>
-          <a href='/' className='border-r  border-black font-bold py-10 px-12 hover:bg-silver-600 hover:text-white'>
+          <a href='/' onClick={aTagHandler} className='border-r  border-black font-bold py-10 px-12 hover:bg-silver-600 hover:text-white'>
             市值
           </a>
-          <a href='/' className=' border-black font-bold py-10 pl-12 pr-20  hover:bg-silver-600 hover:text-white'>
+          <a href='/' onClick={aTagHandler} className=' border-black font-bold py-10 pl-12 pr-20  hover:bg-silver-600 hover:text-white'>
             <FontAwesomeIcon
               icon={faWallet}
               fontSize={24}
@@ -48,7 +51,7 @@ const Navbar = () => {
 
       <div className='md:hidden lg:container mx-auto flex items-center justify-between'>
         {search ||
-          <a href="/">
+          <a href="/" onClick={aTagHandler}>
             <img src="images/logo.svg" alt="logo" />
           </a>
         }
