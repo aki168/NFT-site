@@ -76,7 +76,6 @@ const newWorks = [
         info:"唯一想擁有的人，唯一不可以擁有的",
         price:"370",
         img:"art10.jpg"
-
     },
     {
         title:"藍色啤酒海",
@@ -134,4 +133,79 @@ const artists = [
     }
 ] 
 
-export { recommend, rank, newWorks, artists };
+const findWorks = [
+    {
+        title:"區塊戀-他的私生活",
+        info:"區塊練世代的我們",
+        price:"700",
+        img:"art09.jpg"
+    },
+    {
+        title:"不哭不哭眼淚是珍珠",
+        info:"藝術你我他",
+        price:"660",
+        img:"art12.jpg"
+    },
+    {
+        title:"野小孩——叫你不要玩那個",
+        info:"野小孩——叫你不要玩那個",
+        price:"230",
+        img:"art19.jpg"
+    },
+    {
+        title:"夏娃的醜聞",
+        info:"唯一想擁有的人，唯一不可以擁有的",
+        price:"370",
+        img:"art10.jpg"
+    },
+    {
+        title:"十分鐘就到",
+        info:"再慢慢等吧人生",
+        price:"300",
+        img:"art03.jpg"
+    },
+    {
+        title:"柔美的細胞小將",
+        info:"柔美的細胞小將",
+        price:"330",
+        img:"art16.jpg"
+    },
+    {
+        title:"藍色啤酒海",
+        info:"越醉我越愛",
+        price:"890",
+        img:"art02.jpg"
+    },
+    {
+        title:"我這樣有美嗎",
+        info:"戴帽子的高個女人",
+        price:"1300",
+        img:"art04.jpg"
+    },
+    {
+        title:"心如止水——今天吃素",
+        info:"心如止水——今天吃素",
+        price:"930",
+        img:"art15.jpg"
+    },
+    {
+        title:"沒有人愛我",
+        info:"我是一隻受傷的小貓咪",
+        price:"330",
+        img:"art11.jpg"
+    },
+    {
+        title:"我真的受傷了",
+        info:"不哭不哭",
+        price:"730",
+        img:"art27.jpg"
+    },
+    {
+        title:"每當夏天我吹著溫暖的風",
+        info:"每當夏天我吹著溫暖的風",
+        price:"400",
+        img:"art06.jpg"
+    },
+]
+
+export { recommend, rank, newWorks, artists, findWorks };

@@ -6,7 +6,7 @@ const RankCard = ({ rank, maker, title, img, price }) => {
 
 
     return (
-        <div className='bg-white border border-black flex'>
+        <div className='bg-white border border-black flex '>
             <div className='my-auto px-2 '>{rank}</div>
             <a className='border-x border-black'
                 href='/'

@@ -9,6 +9,7 @@ import RankCardLg from '../components/RankCardLg'
 import MySlider from '../components/MySlider'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faIcons, faPenRuler, faTags, faWallet } from '@fortawesome/free-solid-svg-icons'
+import Masonry from '../components/Masonry'
 
 const MainPage = () => {
 
@@ -60,6 +61,7 @@ const MainPage = () => {
         {recommend.map((item, index) => <RecommendCard {...item} key={index} />)}
       </section>
 
+      {/* ---------------- */}
       <section className='md:container md:mx-auto px-3 mb-[80px]'>
         <MainTitle en='Ranking' cn='市價排行榜' />
         <div className='flex flex-col gap-4 md:hidden'>
@@ -74,23 +76,27 @@ const MainPage = () => {
         </div>
         <div className='hidden md:flex md:justify-between'>
           {rankOthers.map((item, index) => (
-            <div style={{ width: "415px" }}>
+            <div className='lg:w-[30%]'>
               <RankCard {...item} key={index} />
             </div>
           ))}
         </div>
       </section >
 
+
+      {/* ---------------- */}
       <section className='md:container md:mx-auto px-3'>
         <MainTitle en='Artist' cn='熱門藝術家' />
         <MySlider />
       </section >
 
+      {/* ---------------- */}
       <section className='md:container md:mx-auto px-3'>
         <MainTitle en='Artwork' cn='最新藝術品' />
+        <Masonry/>
       </section >
 
-
+      {/* ---------------- */}
       <section className='md:container md:mx-auto px-3'>
         <h2 className='text-[48px] text-center'>Join Us</h2>
         <p className='text-[20px] font-bold text-center pb-10'>創建並出售你的藝術品</p>

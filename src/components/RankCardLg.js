@@ -3,14 +3,14 @@ import React from 'react'
 const RankCardLg = ({ rank, maker, title, img, price }) => {
 
 return (
-    <div className='bg-white border border-black flex flex-col'>
-    <a className='border-black'
+    <div className='bg-white border border-black flex flex-col lg:w-[30%] md:w-full md:mb-4'>
+    <a className='border-black '
         href='/'
         style={{
             backgroundImage: `url("./images/${img}")`,
             backgroundPosition: "center top",
             backgroundSize: "cover",
-            width: "415px",
+            // width: "415px",
             height:"380px",
             position:"relative"
         }}>
