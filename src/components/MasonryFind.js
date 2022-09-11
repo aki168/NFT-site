@@ -9,7 +9,7 @@ const MasonryFind = ({ title, info, price, img }) => {
     const [more, setMore] = useState(false)
 
     return (
-      <div className='mb-12 w-full'>
+      <div className='mb-20 w-full relative'>
         <div className='relative mb-4'
           onMouseEnter={() => setMore(prev => !prev)}
           onMouseLeave={() => setMore(prev => !prev)}
@@ -39,7 +39,7 @@ const MasonryFind = ({ title, info, price, img }) => {
             </div>
           }
         </div>
-        <h3 className='text-black fs-noto font-bold lg:border-b lg:pb-4 border-black '>{findWorks[workNum].title}</h3>
+        <h3 className='text-black fs-noto font-bold lg:border-b lg:pb-4 border-black absolute bottom-[-48px]'>{findWorks[workNum].title}</h3>
       </div>
 
     )
