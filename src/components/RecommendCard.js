@@ -1,13 +1,12 @@
 import React from 'react'
 import MyButton from './MyButton'
-import VerticalTitle from './VerticalTitle'
 
 const RecommendCard = ({maker, title, info, img}) => {
   return (
     <>
     <div className='pb-8 border-y border-y-black md:hidden bg-white' >
       <div className='pb-8 md:w-2/3 md:pb-0'>
-        <img src={`images/${img}`} alt="works" className='object-contain'/>
+        <img src={`${process.env.PUBLIC_URL}/images/${img}`} alt="works" className='object-contain'/>
       </div>
       <article className='pb-8 px-3 '>
         <h3 className='text-[18px] font-bold pb-2'>{maker}</h3>

@@ -7,7 +7,7 @@ return (
     <a className='border-black '
         href='/'
         style={{
-            backgroundImage: `url("./images/${img}")`,
+            backgroundImage: `url("${process.env.PUBLIC_URL}/images/${img}")`,
             backgroundPosition: "center top",
             backgroundSize: "cover",
             // width: "415px",

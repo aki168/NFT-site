@@ -4,7 +4,7 @@ import MyButton from '../components/MyButton'
 
 const MasonryFind = ({ title, info, price, img }) => {
 
-  const MasonryItemFind = ({ workNum, style }) => {
+  const MasonryItemFind = ({ workNum, styling }) => {
 
     const [more, setMore] = useState(false)
 
@@ -15,9 +15,9 @@ const MasonryFind = ({ title, info, price, img }) => {
           onMouseLeave={() => setMore(prev => !prev)}
         >
           <img
-            src={`./images/${findWorks[workNum].img}`}
+            src={`${process.env.PUBLIC_URL}/images/${findWorks[workNum].img}`}
             alt="work"
-            className={`aspect-${style} border-[24px] border-white mb-2`}
+            className={`aspect-${styling} border-[24px] border-white mb-2`}
           />
 
           {more &&
@@ -52,39 +52,39 @@ const MasonryFind = ({ title, info, price, img }) => {
       <div // 手機
         class="gap-6 columns-2 lg:hidden"
       >
-        <MasonryItemFind workNum='0' style='square' />
-        <MasonryItemFind workNum='6' style='[4/3]' className='aspect-[4/3]'/> 
-        <MasonryItemFind workNum='1' style='[3/4]' className='aspect-[3/4]'/>
-        <MasonryItemFind workNum='7' style='square' />
-        <MasonryItemFind workNum='2' style='[4/5]' className='aspect-[4/5]' />
-        <MasonryItemFind workNum='8' style='[4/5]' className='aspect-[4/5]' />
+        <MasonryItemFind workNum='0' styling='square' />
+        <MasonryItemFind workNum='6' styling='[4/3]' className='aspect-[4/3]'/> 
+        <MasonryItemFind workNum='1' styling='[3/4]' className='aspect-[3/4]'/>
+        <MasonryItemFind workNum='7' styling='square' />
+        <MasonryItemFind workNum='2' styling='[4/5]' className='aspect-[4/5]' />
+        <MasonryItemFind workNum='8' styling='[4/5]' className='aspect-[4/5]' />
 
-        <MasonryItemFind workNum='3' style='square' /> 
-        <MasonryItemFind workNum='9' style='[2/3]' className='aspect-[2/3]' />
-        <MasonryItemFind workNum='4' style='auto' />
-        <MasonryItemFind workNum='10' style='[3/4]' className='aspect-[3/4]'/>
-        <MasonryItemFind workNum='5' style='auto' />
-        <MasonryItemFind workNum='11' style='auto' />
+        <MasonryItemFind workNum='3' styling='square' /> 
+        <MasonryItemFind workNum='9' styling='[2/3]' className='aspect-[2/3]' />
+        <MasonryItemFind workNum='4' styling='auto' />
+        <MasonryItemFind workNum='10' styling='[3/4]' className='aspect-[3/4]'/>
+        <MasonryItemFind workNum='5' styling='auto' />
+        <MasonryItemFind workNum='11' styling='auto' />
       </div>
 
       <div // PC
         class="gap-6 columns-4 hidden lg:block"
       >
-        <MasonryItemFind workNum='0' style='square' />
-        <MasonryItemFind workNum='1' style='auto' /> 
-        <MasonryItemFind workNum='2' style='auto' />
+        <MasonryItemFind workNum='0' styling='square' />
+        <MasonryItemFind workNum='1' styling='auto' /> 
+        <MasonryItemFind workNum='2' styling='auto' />
 
-        <MasonryItemFind workNum='3' style='[5/6]' className='aspect-[5/6]' /> 
-        <MasonryItemFind workNum='4' style='square' />
-        <MasonryItemFind workNum='5' style='square' />
+        <MasonryItemFind workNum='3' styling='[5/6]' className='aspect-[5/6]' /> 
+        <MasonryItemFind workNum='4' styling='square' />
+        <MasonryItemFind workNum='5' styling='square' />
 
-        <MasonryItemFind workNum='6' style='square' className='aspect-square' />
-        <MasonryItemFind workNum='7' style='square' className='aspect-square' />
-        <MasonryItemFind workNum='8' style='auto' className='aspect-auto'/>
+        <MasonryItemFind workNum='6' styling='square' className='aspect-square' />
+        <MasonryItemFind workNum='7' styling='square' className='aspect-square' />
+        <MasonryItemFind workNum='8' styling='auto' className='aspect-auto'/>
 
-        <MasonryItemFind workNum='9' style='auto' />
-        <MasonryItemFind workNum='10' style='square' />
-        <MasonryItemFind workNum='11' style='auto' />
+        <MasonryItemFind workNum='9' styling='auto' />
+        <MasonryItemFind workNum='10' styling='square' />
+        <MasonryItemFind workNum='11' styling='auto' />
       </div>
 
     </main>

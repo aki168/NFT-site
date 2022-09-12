@@ -20,7 +20,7 @@ const Navbar = () => {
       {/* PC版本 */}
       <div className='hidden md:flex md:items-center md:justify-between border border-black'>
         <NavLink to="/" className='pl-20 py-8 border-black'>
-          <img src="images/logo.svg" alt="logo" />
+          <img src={`${process.env.PUBLIC_URL}/images/logo.svg`} alt="logo" />
         </NavLink>
         <div className='flex items-center'>
           <input
@@ -52,7 +52,7 @@ const Navbar = () => {
       <div className='md:hidden lg:container mx-auto flex items-center justify-between'>
         {search ||
           <NavLink to="/" onClick={aTagHandler}>
-            <img src="images/logo.svg" alt="logo" />
+            <img src={`${process.env.PUBLIC_URL}/images/logo.svg`} alt="logo" />
           </NavLink>
         }
         <div className='flex justify-between w-full'>

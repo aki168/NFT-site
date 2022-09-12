@@ -13,7 +13,7 @@ const RankCard = ({ rank, maker, title, img, price }) => {
                 onMouseEnter={() => setMore(prev => !prev)}
                 onMouseLeave={() => setMore(prev => !prev)}
                 style={{
-                    backgroundImage: `url("./images/${img}")`,
+                    backgroundImage: `url("${process.env.PUBLIC_URL}/images/${img}")`,
                     backgroundPosition: "center",
                     backgroundSize: "cover",
                     width: "87px"

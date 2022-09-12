@@ -13,7 +13,7 @@ const MySlider = () => {
       <div className='flex justify-between items-center'>
         <div className='filter grayscale hidden md:block'
           style={{
-            backgroundImage: `url("./images/${artists[0].img}")`,
+            backgroundImage: `url("${process.env.PUBLIC_URL}/images/${artists[0].img}")`,
             backgroundPosition: "center",
             backgroundSize: "cover",
             width: "305px",
@@ -24,7 +24,7 @@ const MySlider = () => {
 
         <div className='mx-auto'>
           <div style={{
-            backgroundImage: `url("./images/${artists[1].img}")`,
+            backgroundImage: `url("${process.env.PUBLIC_URL}/images/${artists[1].img}")`,
             backgroundPosition: "center",
             backgroundSize: "cover",
           }}
@@ -47,7 +47,7 @@ const MySlider = () => {
 
         <div className='filter grayscale hidden md:block'
           style={{
-            backgroundImage: `url("./images/${artists[2].img}")`,
+            backgroundImage: `url("${process.env.PUBLIC_URL}/images/${artists[2].img}")`,
             backgroundPosition: "center",
             backgroundSize: "cover",
             width: "305px",
@@ -58,10 +58,10 @@ const MySlider = () => {
       </div>
 
       <div className='p-12 flex gap-2 justify-center'>
-        <a href="!#" onClick={aTagHandler} className='w-[8px] h-[8px] bg-black hover:bg-silver-500'></a>
-        <a href="!#" onClick={aTagHandler} className='w-[16px] h-[8px] bg-primary hover:bg-silver-500'></a>
-        <a href="!#" onClick={aTagHandler} className='w-[8px] h-[8px] bg-black hover:bg-silver-500'></a>
-        <a href="!#" onClick={aTagHandler} className='w-[8px] h-[8px] bg-black hover:bg-silver-500'></a>
+        <a href="!#" onClick={aTagHandler} className='w-[8px] h-[8px] bg-black hover:bg-silver-500'> </a>
+        <a href="!#" onClick={aTagHandler} className='w-[16px] h-[8px] bg-primary hover:bg-silver-500'> </a>
+        <a href="!#" onClick={aTagHandler} className='w-[8px] h-[8px] bg-black hover:bg-silver-500'> </a>
+        <a href="!#" onClick={aTagHandler} className='w-[8px] h-[8px] bg-black hover:bg-silver-500'> </a>
       </div>
 
     </>

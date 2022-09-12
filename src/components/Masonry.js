@@ -4,7 +4,7 @@ import MyButton from '../components/MyButton'
 
 const Masonry = ({ title, info, price, img }) => {
 
-  const MasonryItem = ({ workNum, style }) => {
+  const MasonryItem = ({ workNum, styling }) => {
 
 
     const [more, setMore] = useState(false)
@@ -18,9 +18,9 @@ const Masonry = ({ title, info, price, img }) => {
           onMouseLeave={() => setMore(prev => !prev)}
         >
           <img
-            src={`./images/${newWorks[workNum].img}`}
+            src={`${process.env.PUBLIC_URL}/images/${newWorks[workNum].img}`}
             alt="work"
-            className={`aspect-${style} border-[24px] border-white mb-2`}
+            className={`aspect-${styling} border-[24px] border-white mb-2`}
           />
 
           {more &&
@@ -56,31 +56,31 @@ const Masonry = ({ title, info, price, img }) => {
       <div // 手機
         class="gap-6 columns-2xs lg:hidden"
       >
-        <MasonryItem workNum='0' style='square' />
-        <MasonryItem workNum='2' style='video' className='aspect-video'/> 
-        <MasonryItem workNum='4' style='[3/4]' className='aspect-[3/4]' />
+        <MasonryItem workNum='0' styling='square' />
+        <MasonryItem workNum='2' styling='video' className='aspect-video'/> 
+        <MasonryItem workNum='4' styling='[3/4]' className='aspect-[3/4]' />
 
-        <MasonryItem workNum='1' style='square' /> 
-        <MasonryItem workNum='3' style='[3/4]' className='aspect-[3/4]'/>
-        <MasonryItem workNum='5' style='video' />
+        <MasonryItem workNum='1' styling='square' /> 
+        <MasonryItem workNum='3' styling='[3/4]' className='aspect-[3/4]'/>
+        <MasonryItem workNum='5' styling='video' />
 
       </div>
 
       <div // pc
         class="gap-6 columns-2xs hidden lg:block"
       >
-        <MasonryItem workNum='0' style='square' />
-        <MasonryItem workNum='4' style='video' />
+        <MasonryItem workNum='0' styling='square' />
+        <MasonryItem workNum='4' styling='video' />
 
-        <MasonryItem workNum='1' style='[4/5]' className='aspect-[4/5]' />
-        <MasonryItem workNum='5' style='square' />
+        <MasonryItem workNum='1' styling='[4/5]' className='aspect-[4/5]' />
+        <MasonryItem workNum='5' styling='square' />
 
 
-        <MasonryItem workNum='2' style='square' />
-        <MasonryItem workNum='6'style='[3/5]' className='aspect-[3/5]' />
+        <MasonryItem workNum='2' styling='square' />
+        <MasonryItem workNum='6'styling='[3/5]' className='aspect-[3/5]' />
 
-        <MasonryItem workNum='3' style='video' />
-        <MasonryItem workNum='7' style='square' />
+        <MasonryItem workNum='3' styling='video' />
+        <MasonryItem workNum='7' styling='square' />
       </div>
     </main>
   )
