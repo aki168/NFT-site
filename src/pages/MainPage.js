@@ -97,7 +97,7 @@ const MainPage = () => {
       </section >
 
       {/* ---------------- */}
-      <section className='md:container md:mx-auto px-3'>
+      <section className='md:container md:mx-auto px-3 mt-5'>
         <h2 className='text-[48px] text-center'>Join Us</h2>
         <p className='text-[20px] font-bold text-center pb-10'>創建並出售你的藝術品</p>
       </section >

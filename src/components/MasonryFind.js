@@ -39,7 +39,7 @@ const MasonryFind = ({ title, info, price, img }) => {
             </div>
           }
         </div>
-        <h3 className='text-black fs-noto font-bold lg:border-b lg:pb-4 border-black absolute bottom-[-48px]'>{findWorks[workNum].title}</h3>
+        <h3 className='text-black fs-noto font-bold lg:border-b lg:pb-2 border-black absolute bottom-[-33px]'>{findWorks[workNum].title}</h3>
       </div>
 
     )
@@ -74,13 +74,13 @@ const MasonryFind = ({ title, info, price, img }) => {
         <MasonryItemFind workNum='1' style='auto' /> 
         <MasonryItemFind workNum='2' style='auto' />
 
-        <MasonryItemFind workNum='3' style='[3/4]' className='aspect-[3/4]' /> 
+        <MasonryItemFind workNum='3' style='[5/6]' className='aspect-[5/6]' /> 
         <MasonryItemFind workNum='4' style='square' />
         <MasonryItemFind workNum='5' style='square' />
 
-        <MasonryItemFind workNum='6' style='square' />
-        <MasonryItemFind workNum='7' style='[2/3]' className='aspect-[2/3]' />
-        <MasonryItemFind workNum='8' style='auto' />
+        <MasonryItemFind workNum='6' style='square' className='aspect-square' />
+        <MasonryItemFind workNum='7' style='square' className='aspect-square' />
+        <MasonryItemFind workNum='8' style='auto' className='aspect-auto'/>
 
         <MasonryItemFind workNum='9' style='auto' />
         <MasonryItemFind workNum='10' style='square' />

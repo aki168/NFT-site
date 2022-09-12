@@ -4,8 +4,8 @@ import MasonryFind from '../components/MasonryFind'
 
 const FindPage = () => {
   return (
-    <div className='bg-silver-300'>
-      <section className='md:container md:mx-auto px-3 pt-3 pb-20'>
+    <div className='bg-silver-300 py-10'>
+      <section className='md:container md:mx-auto pt-3 pb-20'>
         <MasonryFind/>
       </section>
       <div className='py-2 text-center fs-noto border-t border-black'>
